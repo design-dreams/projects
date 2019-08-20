@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Art Space - Color</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebecca Palumbo">
+    <meta name="description" content="Art Space - Color and Draw">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+    <header>
+        <h1 class="colorheading"><a href="index.html" class="animated tada">Art Space</a></h1>
+    </header>
+    <section>
+        <img src="images/icecream.jpg" alt="picture to color"/>
+    </section>
+    <footer>
+        <div id="grass"></div>
+        <div id="frog"></div>
+    </footer>
+</div>
+    
+<!-- jQuery -->
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    
+<!-- Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+
+<!-- Frog jumping -->
+<script>
+    var $frog = $('#frog');
+    var $grass = $('#grass');
+    $grass.on('click', function(e){
+        var tl3 = new TimelineLite();
+        tl3.to($($frog), 0.3, {bottom: 100})
+        .to($($frog), 0.3, {bottom: 0});
+    });
+    
+</script>
+</body>
+
+</html>

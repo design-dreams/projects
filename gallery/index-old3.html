@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacific NW Photos</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebecca Palumbo">
+    <meta name="description" content="Pacific NW Photos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+    <header>
+        <div id="title">
+            <div><img src="images/logo.gif" width="50" height="50" alt="logo"></div>
+            <div><h1>Pacific NW Photos</h1></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 id="byline">See some of the sights I've seen while exploring natural areas near my home.</h2>
+        </section>
+        
+        <section class="gallery">
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img0717-2.jpg)"><div class="txt"><p>On a dock in Seattle at sunset in July 2017.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img03175-2.jpg)"><div class="txt"><p>Rattlesnake Ledge view right before getting to the ledge. Taken in March 2017 near North Bend, WA.</p> <p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img03174-2.jpg)"><div class="txt"><p>A beautiful March day at Rattlesnake Lake near North Bend, WA. Taken in 2017.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img0317-2.jpg)"><div class="txt"><p>One of many misty days on the Eastside of Seattle in March 2017.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img03172-2.jpg)"><div class="txt"><p>On the trail to Rattlesnake Ledge near North Bend in March 2017.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img03176-2.jpg)"><div class="txt"><p>Lake Sammamish River Trail at dusk in Woodinville, WA in March 2017.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img0617-2.jpg)"><div class="txt"><p>Taken in Mukilteo, WA in June 2017. Do you see a number?</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img0916-2.jpg)"><div class="txt"><p>Sea lions seen below the Deception Pass bridge in September 2016. It was amazing.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img09162-2.jpg)"><div class="txt"><p>View from the Deception Pass bridge in September 2016.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img0917-2.jpg)"><div class="txt"><p>Interesting spider web on the trails at Saint Edward Park in Kirkland, WA. There were several. First time I've ever seen them. Taken in September 2017.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img3956-2.jpg)"><div class="txt"><p>A fall day in Carnation at the Tolt MacDonald Park on the Snoqualmie River. Taken in 2017 from the walking bridge.</p><p class="large">see larger picture</p></div></div>
+
+            <div onclick="showTxt(this)" class="box" style="background-image: url(images/img4228-2.jpg)"><div class="txt"><p>Baby geese and their parents! Taken in Lynnwood, WA in April 2018.</p><p class="large">see larger picture</p></div></div>
+        </section>
+        
+        <section class="slideshow">
+            <img class="slide">
+            <!-- next, previous & x(close) buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <a class="close" onclick="closeSlides()">&times;</a>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Pictures and web design by <a href="../index.html">Rebecca Palumbo</a>. &copy; 2018</p>
+    </footer>
+</div>
+    
+    
+<script>
+    /* toggles text in box when small image is clicked */
+    var text = document.querySelectorAll(".txt");
+    for (var i=0; i<text.length;i++) {
+        text[i].style.display = "none";
+    }
+    function showTxt(id) {
+        if (id.querySelector(".txt").style.display == "none") {
+            id.querySelector(".txt").style.display = "block";
+        } else {
+            id.querySelector(".txt").style.display = "none";
+        }
+    }
+    
+    /* SLIDE SHOW */
+    
+    /* sets the intial display of the slideshow to none */
+    document.querySelector(".slideshow").style.display = "none";
+    
+    /* inserts onclick attribute for p.large to start slideshow */
+    var seeLargeImg = document.querySelectorAll(".large");
+    for (var i = 0; i<seeLargeImg.length; i++) {
+        seeLargeImg[i].setAttribute("onclick", "slideShow(" + i + ")");
+    }
+    
+    var image;
+    var slide;
+    
+    function slideShow(s) {
+        image = ["0717", "03175", "03174", "0317", "03172", "03176", "0617", "0916", "09162", "0917", "3956", "4228"];
+        var largeImage = "images/img" + image[s] + "-6.jpg";
+        document.querySelector(".gallery").style.display = "none";
+        document.querySelector(".slideshow").style.display = "flex";
+        document.querySelector(".slide").setAttribute("src", largeImage);
+        slide = s;
+    }
+    
+    /* changes slide when previous or next buttons clicked */
+    function changeSlide(c) {
+        var x = slide + c;
+        if (x == image.length) {
+            x = 0;
+        }
+        if (x == -1) {
+            x = image.length - 1;
+        }
+        slideShow(x);   
+    }
+    
+    /* closes slide when x is clicked */
+    function closeSlides() {
+        document.querySelector(".slideshow").style.display = "none";
+        document.querySelector(".gallery").style.display = "flex";
+    }
+   
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacific NW Photos</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebecca Palumbo">
+    <meta name="description" content="Pacific NW Photos by Rebecca Palumbo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+</head>
+
+<body>
+<div class="page">
+    <header>
+        <div id="title">
+            <div><img src="images/logo.gif" width="50" height="50" alt="logo"></div>
+            <div><h1>Pacific NW Photos</h1></div>
+        </div>
+    </header>
+    <section><h2 id="byline">See some of the sights I've seen while exploring natural areas near my home.</h2></section>
+    <section class="gallery">
+        
+        <div class="descrip" style="background-image: url('images/img0717-2.jpg')"><p>On a ferry from Seattle to Bainbridge at sunset in July 2017.<br><a href="images/img0717-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img03175-2.jpg')"><p>Rattlesnake Ledge view right before getting to the ledge. Taken in March 2017 near North Bend, WA. <br><a href="images/img03175-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img03174-2.jpg')"><p>A beautiful March day at Rattlesnake Lake near North Bend, WA. Taken in 2017.<br><a href="images/img03174-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img0317-2.jpg')"><p>One of many misty days on the Eastside of Seattle in March 2017.<br><a href="images/img0317-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img03172-2.jpg')"><p>On the trail to Rattlesnake Ledge near North Bend in March 2017.<br><a href="images/img03172-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img03176-2.jpg')"><p>Lake Sammamish River Trail at dusk in Woodinville, WA in March 2017.<br><a href="images/img03176-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img0617-2.jpg')"><p>Taken in Mukilteo, WA in June 2017. Do you see a number? <br><a href="images/img0617-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img0916-2.jpg')"><p>Sea lions seen below the Deception Pass bridge in September 2016. It was amazing.<br><a href="images/img0916-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img09162-2.jpg')"><p>View from the Deception Pass bridge in September 2016.<br><a href="images/img09162-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img0917-2.jpg')"><p>Interesting spider web on the trails at Saint Edward Park in Kirkland, WA. There were several. First time I've ever seen them. Taken in September 2017.<br><a href="images/img0917-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img3956-2.jpg')"><p>A fall day in Carnation at the Tolt MacDonald Park on the Snoqualmie River. Taken in 2017 from the walking bridge.<br><a href="images/img3956-6.jpg">see larger picture</a></p></div>
+        
+        <div class="descrip" style="background-image: url('images/img4228-2.jpg')"><p>Baby geese and their parents! Taken in Lynnwood, WA in April 2018.<br><a href="images/img4228-6.jpg">see larger picture</a></p></div>
+        
+        
+    </section>
+    
+    <footer>
+        <p>Pictures and design by <a href="../index.html">Rebecca</a>. Pictures for private use only. &copy; 2018</p>
+    </footer>
+</div>
+    
+    
+<!-- jQuery -->  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    
+<!-- lightbox CDN -->
+<!-- https://github.com/feimosi/baguetteBox.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js" async></script>
+    
+<script>
+    /* slowly shows byline */
+    $(function() {
+        "use strict";
+        $('#byline').hide().show(2000);
+    });
+    
+    /* shows description of image when clicked */
+    $(function() {
+        "use strict";
+        $('.gallery')
+            .find('div')
+            .click(function() {
+                $(this).find('p').toggle();
+            });
+    });
+    
+    /* runs lightbox when link is clicked */
+    $(function() {
+        "use strict";
+        baguetteBox.run('.gallery');
+    });
+</script>
+
+</body>
+
+</html>
