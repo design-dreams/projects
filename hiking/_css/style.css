@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Arima+Madurai:300,400');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #4B4132;
+    font-family: 'Arima Madurai', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #e3c7b1;
+    border-radius: 0;
+    box-shadow: 0 0 10px #fff;
+}
+h2 {
+    padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+main {
+    position: relative;
+    margin: 0 auto;
+}
+main a {
+    color: #4B4132;
+}
+main a:hover {
+    color: #228A4F;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        background-image: url("../_images/trees2.jpg"); /* picture I took */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .page {
+        background-color: rgba(227,199,177,0.9);
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+}
+
+/*** HEADER ***/
+header {
+    position: relative;
+}
+h1 {
+    padding-top: 10px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px 3px #988972;
+    font-size: 40px;
+    text-align: center;
+}
+#page-description {
+    text-align: center;
+    font-family: 'Arima Madurai', sans-serif;
+}
+[class^="boot"] {
+    display: none;
+}
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 34px;
+    }
+    #page-description {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 960px) {
+    [class^="boot"] {
+        display: block;
+        width: 40px;
+        height: auto;
+        position: absolute;
+        opacity: 0;
+    }
+    .boot-one {
+        top: 60px;
+        left: 40px;
+        transform: rotate(70deg);
+        animation: footstep 1s linear 1s forwards;
+    }
+    .boot-two {
+        top: 0px;
+        left: 100px;
+        transform: rotateX(180deg) rotate(120deg);
+        animation: footstep 1s linear 2s forwards;
+    }
+    .boot-three {
+        top: 5px;
+        left: 190px;
+        transform: rotate(60deg);
+        animation: footstep 1s linear 3s forwards;
+    }
+    .boot-four {
+        top: 5px;
+        left: 700px;
+        transform: rotate(110deg);
+        animation: footstep 1s linear 5s forwards;
+    }
+    .boot-five {
+        top: 8px;
+        left: 796px;
+        transform: rotateX(180deg) rotate(70deg);
+        animation: footstep 1s linear 6s forwards;
+    }
+    .boot-six {
+        top: 60px;
+        left: 870px;
+        transform: rotate(100deg);
+        animation: footstep 1s linear 7s forwards;
+    }
+    @keyframes footstep {
+        from {opacity 0;}
+        to {opacity: 1};
+    }
+}
+
+/*** NAVIGATION ***/
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    font-family: 'Arima Madurai', sans-serif;
+    margin: 10px auto;
+    padding: 1px 0;
+    font-size: 16px;
+    background-color: #4b4132;
+    box-shadow: 0 2px 3px gray;
+    position: relative;
+    width: 98%;
+    border-radius: 5px;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    z-index: 9;
+}
+nav a {
+    color: #28A75E;
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #28A75E;
+}
+#menu-text-mobile {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    color: #28A75E;
+    position: relative;
+    left: 40px;
+    font-size: 18px;
+    z-index: 0;
+}
+#menu-border-mobile {
+    border-left: 5px dotted #28A75E;
+}
+@media screen and (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        font-size: 18px;
+    }
+    nav a {
+         border-bottom: 5px solid #4b4132;
+    }
+    #nav {
+        flex-direction: row;
+    }
+    nav a:hover {
+        border-bottom: 5px dotted #28A75E;
+    }
+    #selected-nav {
+       border-bottom: 5px dotted #28A75E; 
+    }
+    #menu-text-mobile, #menu-border-mobile {
+        display: none;
+    }
+}
+
+/*** FOOTER ***/
+footer {
+    margin: 10px auto 0;
+    padding: 5px 0;
+    clear: both;
+    text-align: center;
+    border-top: 5px dotted #228A4F;
+}
+footer a {
+    color: #4B4132;
+}
+footer a:hover {
+    color: #228A4F;
+}
+
+/*** HOME PAGE ***/
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.gallery figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 14%;
+    color: #e3c7b1;
+    background-color: rgba(75, 65, 50,0.7);
+}
+.gallery figure {
+    height: 250px;
+    width: 250px;
+    margin: 10px 10px;
+    box-shadow: 3px 3px 4px gray;
+}
+.gallery a {
+    text-decoration: none;
+}
+
+@media screen and (any-hover) {
+  .gallery figure:hover figcaption {
+      position: relative;
+      font-size: 28px;
+      width: 95%;
+      margin: auto;
+      background-color: rgba(75, 65, 50,0.7);
+      bottom: 60%;
+      transition: bottom 1s, font-size 1s;
+    }
+}
+
+/*** HIKING PAGES ***/
+
+.hikepic {
+    width: 337px;
+    height: 449px;
+    display: block;
+    position: relative;
+    margin: auto;
+    box-shadow: 3px 3px 4px gray;
+}
+dl {
+    margin: 0 20px 20px;
+}
+dt {
+    margin: 5px 0 2px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+ol {
+    margin-left: 30px;
+}
+@media screen and (min-width: 600px) {
+    .hikepic {
+        float: right;
+        margin: 0 20px;
+    }
+}
+/*** GEAR/MINDFULNESS/RESOURCES PAGES ***/
+.columns {
+    padding: 0 20px;
+}
+.columns p {
+    padding-bottom: 15px;
+}
+#disclaimer {
+    padding-top: 10px;
+    font-size: 12px;
+}
+dd ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+@media screen and (min-width: 600px) {
+    .columns {
+        column-count: 2;
+        column-gap: 20px;
+        }
+    .columns h2, #disclaimer {
+        column-span: all;
+    }
+}
