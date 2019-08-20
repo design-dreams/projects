@@ -64,3 +64,6 @@ typings/
 images
 _images
 assets
+
+# Mac annoyances
+.DS_Store
