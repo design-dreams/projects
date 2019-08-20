@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# any images or assets
+images
+_images
+assets
