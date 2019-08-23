@@ -1,11 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.17 77.33">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 410 120">
   <defs>
+    <!-- filter adapted from CodePen https://codepen.io/dipscom/pen/mVYjPw -->
+    <filter id="glow"> 
+      <feMorphology operator="dilate" radius="1" in="SourceAlpha" result="thicken" />
+      <feGaussianBlur in="thicken" stdDeviation="3" result="blurred" />
+      <feFlood flood-color="#186bc1" result="glowColor" />
+      <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+      <feMerge>
+			  <feMergeNode in="softGlow_colored"/>
+			  <feMergeNode in="SourceGraphic"/>
+		  </feMerge>
+    </filter>
+  
     <style>
       .cls-1 {
         fill: none;
-        stroke: #000;
+        stroke: #225bfb;
         stroke-miterlimit: 10;
         stroke-width: 1.5;
+        filter: url(#glow);
       }
       @keyframes offset {
         100% {
@@ -21,7 +34,7 @@
         stroke-dasharray: 250;
         stroke-dashoffset: 250;
         animation: offset 3s linear 3s forwards;
-        }
+      }
       #text-D1 {
         stroke-dasharray: 230;
         stroke-dashoffset: 230;
