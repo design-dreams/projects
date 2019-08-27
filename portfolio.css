@@ -33,7 +33,18 @@ nav p {
     text-transform: uppercase;
     text-shadow: 0 0 2px #186bc1;
 }
+nav p.selected {
+    color: #eef1fd;
+}
 nav p:hover {
     color: #eef1fd;
     cursor: pointer;
+}
+
+#projects {
+    display: none;
+    margin: auto;
+    width: 400px;
+    background-color: #eef1fd;
+    border-radius: 5px;
 }
