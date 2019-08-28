@@ -8,7 +8,7 @@ var projects = document.getElementById("projects");
 var certs = document.getElementById("certs");
 var about = document.getElementById("about");
 
-// event listeners for nav elements
+// click event listener for nav elements
 navProjects.addEventListener("click", showProjects);
 navCerts.addEventListener("click", showCerts);
 navAbout.addEventListener("click", showAbout);
