@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Khula:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Khula:400,700&display=swap');
 
 * {
     padding: 0;
@@ -8,12 +8,17 @@ body {
     font-family: 'Khula', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+/** header **/
+header {
     background-color: #152027;
+    position: relative;
+    z-index: 10;
 }
 h1 {
     font-family: 'Khula', sans-serif;
-    font-size: 90px;
-    font-weight: 800;
+    font-size: 86px;
+    font-weight: 700;
     text-align: center;
     text-shadow: 0 0 2px #000; 
     color: #eef1fd;
@@ -23,15 +28,21 @@ header img {
     display: block;
     margin: -25px auto 0;
 }
+
+/** navigation bar **/
 nav {
+    position: relative;
     display: flex;
     justify-content: center;
+    background-color: #152027;
+    box-shadow: 0 7px 20px #2276f5;
+    z-index: 7;
 }
 nav p {
     margin: 2px 12px;
     color: #225bfb;
     text-transform: uppercase;
-    text-shadow: 0 0 2px #186bc1;
+    text-shadow: 0 0 2px #186ac1cc;
 }
 nav p.selected {
     color: #eef1fd;
@@ -41,10 +52,27 @@ nav p:hover {
     cursor: pointer;
 }
 
-#projects {
-    display: none;
-    margin: auto;
-    width: 400px;
+/** main content **/
+main {
     background-color: #eef1fd;
-    border-radius: 5px;
+    height: 800px; /* temporary */
+    
 }
+section {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 500px;
+    text-align: center;
+    display: none;
+}
+#projects {
+    
+}
+#certs {
+    
+}
+#about {
+    
+}
+
+/** footer **/
