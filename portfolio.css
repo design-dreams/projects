@@ -20,7 +20,6 @@ h1 {
     font-size: 86px;
     font-weight: 700;
     text-align: center;
-    text-shadow: 0 0 2px #000; 
     color: #eef1fd;
 }
 header img {
@@ -42,7 +41,7 @@ nav p {
     margin: 2px 12px;
     color: #225bfb;
     text-transform: uppercase;
-    text-shadow: 0 0 2px #186ac1cc;
+    text-shadow: 0 0 2px #186ac1;
 }
 nav p.selected {
     color: #eef1fd;
@@ -58,6 +57,17 @@ main {
     height: 800px; /* temporary */
     
 }
+h2 {  /* hidden but here for SEO */
+    color: #eef1fd; 
+    font-size: 2px;
+}
+h3 {
+    padding: 10px 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 4px #186ac1;
+}
 section {
     margin: 0 auto;
     padding: 10px 0;
@@ -67,6 +77,9 @@ section {
 }
 #projects {
     
+}
+#projects p {
+    font-size: 12px;
 }
 #certs {
     

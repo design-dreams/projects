@@ -5,11 +5,11 @@ $("#nav-projects").click(function() {
     $("section").css("display", "none");
     $("#projects").css("display", "block");
 });
-$("#nav-certs").click(function() {
+$("#nav-connect").click(function() {
     $("nav p").removeClass("selected");
     $(this).addClass("selected");
     $("section").css("display", "none");
-    $("#certs").css("display", "block");
+    $("#connect").css("display", "block");
 });
 $("#nav-about").click(function() {
     $("nav p").removeClass("selected");
