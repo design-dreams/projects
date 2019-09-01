@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Going Global U - My Account</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebecca Palumbo">
+    <meta name="description" content="Connecting university teachers for classroom COIL projects around the world"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Quicksand:400" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+    <header>
+        <div class="wrapper">
+            <img class="logo" src="images/logo.svg" alt="logo">
+            <h1>Going Global U</h1>
+            <h2>Connecting university teachers globally to create student learning projects</h2>
+            <button class="signup" onclick="location.href='signup.html';">Sign Up</button>
+            <button class="signin" onclick="location.href='signin.html';">Sign In</button>
+            <button class="signout" onclick="location.href='index.html';">Sign Out</button>
+        </div>
+    </header>
+    <nav>
+        <div class="mobile">
+            <div id="navheader">
+                <div id="hamburger">
+                    <div class="strip" id="top"></div>
+                    <div class="strip" id="bottom"></div>
+                </div>
+                <div><h1><a href="index.html">Going Global U</a></h1></div>
+                <div><a href="signin.html"><img class="msign" src="icons/signin.svg" alt="click to sign in"></a></div>
+            </div>
+
+            <div id="background"></div>
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Find Teachers</a></li>
+                <li><a href="projects.html">Find Projects</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+        
+        <div class="desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Find Teachers</a></li>
+                <li><a href="projects.html">Find Projects</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li class="highlighted">Forum</li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="wrapper">
+            <h3>Community Forum</h3>
+            <div class="table">
+                <h4>Technology to use and how to use it</h4>
+                <h4>Project ideas</h4>
+                <h4>Collaboration ideas</h4>
+                <h4>Share your experiences</h4>
+                <h4>Questions</h4>
+                <table>
+                <tr>
+                    <td>What are some of your experiences with COIL?</td> 
+                    <td>5</td>
+                    <td>April 5, 2018</td>
+                </tr>
+                <tr>
+                    <td>How do I make COIL a great experience for my students?</td>
+                    <td>2</td>
+                    <td>March 26, 2018</td>
+                </tr>
+                <tr>
+                    <td>Anyone have any great project ideas?</td>
+                    <td>10</td>
+                    <td>March 18, 2018</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Share Buttons -->
+        <!-- Twitter, Facebook & mail SVG Provided by Font Awesome https://fontawesome.com/license -->
+        <!-- SVGs unchanged except for adding circle background -->
+        <p><span id="sharetxt">share</span>
+
+            <a href="https://www.facebook.com/sharer.php?u=http://www.goingglobalu.com">
+                <img src="icons/facebook.svg" width="50" height="50" alt="share on facebook" />
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=http://www.goingglobalu.com">
+                <img src="icons/twitter.svg" width="50" height="50" alt="share on twitter" />
+            </a>
+            <a href="#">  <!-- ***create a form to link to*** -->
+                <img src="icons/mail.svg" width="50" height="50" alt="share with email form" /> 
+            </a>
+        </p>
+    </footer>
+</div>
+<!-- jQuery CDN -->
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        // *** animation for mobile nav bar *** //
+        $("#hamburger").click(function(){
+            $("#top").toggleClass("topRotate");
+            $("#bottom").toggleClass("bottomRotate");
+            $("#background").toggleClass("expand");
+
+            $(".mobile li").toggle();
+            $(".mobile li").toggleClass("anim");
+        });
+        
+        // *** buttons *** //
+        //$('.signin').hide();
+        //$('.signup').hide();
+        $('.signout').hide();
+    })
+</script>
+
+</body>
+
+</html>
