@@ -7,14 +7,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="portfolio.css" rel="stylesheet">
-        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
+        <!-- Could use the following for jQuery instead of plain JavaScript in portfolio.js
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="portfolio-jquery.js" async></script>-->
         <script src="portfolio.js" async></script>
     </head>
 
     <body>
         <header>
             <h1>Rebecca Palumbo</h1>
-            <img src="animation/webdesign.svg">
+            <img src="animation/webdesign.svg" alt="Web Designer animated text">
         </header>
         <nav>
             <p id="nav-projects">projects</p>
@@ -23,17 +25,19 @@
         </nav>
         <main>
             <section id="projects">
-                <h2>Projects</h2>
+                <h2>Projects</h2> <!--hidden, but here for SEO-->
+
                 <h3>Portfolio</h3>
                 <p>This website! I used plain JavaScript so that the navigation menu could be used and display
-                    the content accordingly. I also created a version in jQuery to show that I can use that as well. It can 
-                    be seen on GitHub. The website is just one HTML page, which is why I used JavaScript. I created
+                    the content accordingly in one page. I also created a version in jQuery to show that I can
+                    use that as well. It can be seen on GitHub. I created
                     the Web Designer animation with Illustrator, basing it on a font I liked, then saving it as an SVG
                     and modifying the CSS in the file. It took awhile to create the
                     line, but creating the CSS in the SVG was pretty quick. I've played around with SVG's before and enjoy it.
-                    I had the idea to make it look like
-                    someone was writing Web Designer on the page and then found some info, with a search, on how to do it.</p>
+                    I had an idea to make it look like
+                    someone was writing Web Designer on the page and then figured out how to do it.</p>
                     <p><a href="https://github.com/design-dreams/projects">see the code on GitHub</a></p>
+
                 <h3>Pacific NW Photos</h3>
                 <p>Gallery of photos I created using CSS Flexbox and plain JavaScript.
                     I really like CSS Flexbox and have used it in other projects. The original project was done with a
@@ -41,16 +45,26 @@
                     I did it! You can see the other versions if you look on GitHub. It's explained in the ReadMe file.</p>
                 <p><a href="gallery/index.html">see the website</a> | 
                     <a href="https://github.com/design-dreams/projects/tree/master/gallery">see the code on GitHub</a></p>
+                
                 <h3>Walking in Nature</h3>
-                <p>The first website I created in school, but then I improved it after learning more. I added some CSS animation for 
-                    selecting the hike, created SVG boot prints that appear in the header when the screen is at least 960px wide,
-                    and made some other tweaks. Looks best in Chrome.</p>
+                <p>This is the first website I created in school, but then I improved it after learning more. 
+                    I added some CSS animation for selecting the hike, created SVG boot prints that appear in
+                    the header when the screen is at least 960px wide, made it responsive, etc. I wrote all of
+                    the content and took all of the pictures. The dots look best in Chrome.</p>
                 <p><a href="hiking/index.html">see the website</a> | 
                     <a href="https://github.com/design-dreams/projects/tree/master/hiking">see the code on GitHub</a></p>
+                
                 <h3>Going Global</h3>
-                <p></p>
-                <h3>Art Space</h3>
-                <p>A project for school that is intended for children to use. I used Greensock.</p>
+                <p>I created this website for a User Interface class at the community college I went to. I worked on a team,
+                    but only one other person knew how to code and was pretty busy. He helped with a few pages. I designed 
+                    the overall website, the header, the footer and icons there, and edited the content on the homepage
+                    from the client we were working with. We did work
+                    with a client who worked at UW and I did work with a fellow student on interviewing him and she had some
+                    good input. We also did some user testing in this class. After the class was over, I worked to make 
+                    the site responsive and created the logo during a short internship.</p>
+                <p><a href="COIL/index.html">see the website</a> | 
+                    <a href="https://github.com/design-dreams/projects/tree/master/COIL">see the code on GitHub</a></p>
+                
                 <h3>Responsive Web Design Projects</h3>
                 <p>I created these projects to increase and cement my knowledge of responsive web design
                     and also attain a certificate from freeCodeCamp. There were some learning modules to go
@@ -59,12 +73,23 @@
                 <p><a href="https://codepen.io/collection/AxdrOY/">see the projects</a> | 
                     <a href="https://www.freecodecamp.org/certification/rebeccapalumbo/responsive-web-design">see the certificate</a></p>
                 
+                <h3>Art Space</h3>
+                <p>A project I did for school that is for children. I used Greensock and haven't updated it since.</p>
+                <p><a href="kids/index.html">see the website</a> |
+                    <a href="#">see the code on GitHub</a></p>
             </section>
             <section id="about">
-                <h2>About Rebecca</h2>
+                <h2>About Rebecca</h2> <!--hidden, but here for SEO-->
+                <h3>Resume</h3> <!--dropbox or google docs-->
+                <h3>Certificates Achieved</h3>
+                <h3>Education</h3>
+
             </section>
             <section id="connect">
-                <h2>Connect</h2>
+                <h2>Connect</h2> <!--hidden, but here for SEO-->
+                <p>Email</p>
+                <p>LinkedIn</p>
+                <p>Twitter</p>
             </section>
         </main>
         <footer>
