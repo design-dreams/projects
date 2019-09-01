@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Khula:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Khula:400,700&display=swap'); /* google font */
 
 * {
     padding: 0;
     margin: 0;
 }
-body {
+body, html {
     font-family: 'Khula', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    height: 100%;
+    background-color: #eef1fd;
 }
 /** header **/
 header {
@@ -16,16 +18,16 @@ header {
     z-index: 10;
 }
 h1 {
-    font-family: 'Khula', sans-serif;
-    font-size: 86px;
+    padding-top: 5px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
     color: #eef1fd;
 }
 header img {
-    max-width: 500px;
+    max-width: 250px;
     display: block;
-    margin: -25px auto 0;
+    margin: -15px auto 0;
 }
 
 /** navigation bar **/
@@ -42,6 +44,7 @@ nav p {
     color: #225bfb;
     text-transform: uppercase;
     text-shadow: 0 0 2px #186ac1;
+    font-size: 14px;
 }
 nav p.selected {
     color: #eef1fd;
@@ -52,11 +55,6 @@ nav p:hover {
 }
 
 /** main content **/
-main {
-    background-color: #eef1fd;
-    height: 800px; /* temporary */
-    
-}
 h2 {  /* hidden but here for SEO */
     color: #eef1fd; 
     font-size: 2px;
@@ -66,26 +64,46 @@ h3 {
     font-size: 24px;
     font-weight: 700;
     color: #fff;
-    text-shadow: 1px 1px 4px #186ac1;
+    text-shadow: 1.5px 1.5px 5px #064e9a;
 }
 section {
     margin: 0 auto;
-    padding: 10px 0;
-    width: 500px;
+    padding: 10px 3px;
     text-align: center;
     display: none;
 }
-#projects {
-    
-}
 #projects p {
-    font-size: 12px;
-}
-#certs {
-    
-}
-#about {
-    
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 /** footer **/
+
+/** changes for screens above 430px **/
+@media screen and (min-width: 430px) {
+    h1 {
+        font-size: 50px;
+    }
+    nav p {
+        font-size: 16px;
+    }
+    header img {
+        max-width: 300px;
+        margin: -15px auto 0;
+    }
+}
+/** changes for screens above 600px **/
+@media screen and (min-width: 600px) {
+    h1 {
+        padding-top: 12px;
+        font-size: 70px;
+    }
+    header img {
+        max-width: 450px;
+        margin: -25px auto 0;
+    }
+    section {
+        width: 600px;
+        padding: 10px 0;
+    }
+}
