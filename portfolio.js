@@ -2,6 +2,7 @@
 var navProjects = document.getElementById("nav-projects");
 var navConnect = document.getElementById("nav-connect");
 var navAbout = document.getElementById("nav-about");
+var navBar = document.getElementById("navbar");
 
 // variables for section elements
 var projects = document.getElementById("projects");
@@ -9,11 +10,12 @@ var connect = document.getElementById("connect");
 var about = document.getElementById("about");
 
 // click event listener for nav elements
+navBar.addEventListener("click", moveHeader);
 navProjects.addEventListener("click", showProjects);
 navConnect.addEventListener("click", showConnect);
 navAbout.addEventListener("click", showAbout);
 
-// hides sections and makes nav links their default color
+// hides main content and makes nav links their default color
 function hideSections() {
     navProjects.classList.remove("selected");
     navConnect.classList.remove("selected");
@@ -29,7 +31,7 @@ function showProjects() {
     navProjects.classList.add("selected");
     projects.style.display = "block";
 }
-// shows certificates and highlights corresponding nav link
+// shows how to connect and highlights corresponding nav link
 function showConnect() {
     hideSections();
     navConnect.classList.add("selected");
@@ -40,4 +42,19 @@ function showAbout() {
     hideSections();
     navAbout.classList.add("selected");
     about.style.display = "block";
+}
+// moves header up when nav link is clicked, animation is choppy
+function moveHeader() {
+    var start = document.getElementById("start");
+    var n = 20;
+    var id = setInterval(frame, 50);
+    function frame() {
+        if (n == 0) {
+            clearInterval(id);
+        } else {
+            n--;
+            start.style.top = n + "%";
+        }
+    }
+    navBar.removeEventListener("click", moveHeader);
 }

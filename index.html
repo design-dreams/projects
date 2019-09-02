@@ -7,30 +7,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="portfolio.css" rel="stylesheet">
-        <!-- Could use the following for jQuery instead of plain JavaScript in portfolio.js
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="portfolio-jquery.js" async></script>-->
-        <script src="portfolio.js" async></script>
+        <script src="portfolio-jquery.js" async></script>
+        <!-- Optional plain JavaScript: <script src="portfolio.js" async></script> -->
     </head>
 
     <body>
-        <header>
-            <h1>Rebecca Palumbo</h1>
-            <img src="animation/webdesign.svg" alt="Web Designer animated text">
-        </header>
-        <nav>
-            <p id="nav-projects">projects</p>
-            <p id="nav-about">about rebecca</p>
-            <p id="nav-connect">connect</p>
-        </nav>
+        <div id="start"> <!-- used to start this block of info in the middle of the page and have it move up when links are clicked -->
+            <header>
+                <h1>Rebecca Palumbo</h1>
+                <img src="animation/webdesign.svg" alt="Web Designer animated text">
+            </header>
+            <nav id="navbar">
+                <p id="nav-projects">projects</p>
+                <p id="nav-about">about rebecca</p>
+                <p id="nav-connect">connect</p>
+            </nav>
+        </div>
         <main>
             <section id="projects">
                 <h2>Projects</h2> <!--hidden, but here for SEO-->
 
                 <h3>Portfolio</h3>
-                <p>This website! I used plain JavaScript so that the navigation menu could be used and display
-                    the content accordingly in one page. I also created a version in jQuery to show that I can
-                    use that as well. It can be seen on GitHub. I created
+                <p>I used jQuery in this website, but I also created a plain JavaScript version that can be seen on
+                    GitHub as well. They are used to
+                    navigate the menu and also animate the header and nav up. All content is on one page this way.
+                    I created
                     the Web Designer animation with Illustrator, basing it on a font I liked, then saving it as an SVG
                     and modifying the CSS in the file. It took awhile to create the
                     line, but creating the CSS in the SVG was pretty quick. I've played around with SVG's before and enjoy it.
@@ -74,7 +77,8 @@
                     <a href="https://www.freecodecamp.org/certification/rebeccapalumbo/responsive-web-design">see the certificate</a></p>
                 
                 <h3>Art Space</h3>
-                <p>A project I did for school that is for children. I used Greensock and haven't updated it since.</p>
+                <p>A project I did for school that is for children with colorful animation and an easter egg.
+                     I used Greensock and haven't updated it.</p>
                 <p><a href="kids/index.html">see the website</a> |
                     <a href="#">see the code on GitHub</a></p>
             </section>

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Khula:400,700&display=swap'); /* google font */
-
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Khula:400,700&display=swap'); /* google fonts */
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +9,11 @@ body, html {
     font-weight: 400;
     height: 100%;
     background-color: #eef1fd;
+}
+/** header & nav to move up with js when clicking on doc **/
+#start {
+    position: relative;
+    top: 40%;
 }
 /** header **/
 header {
@@ -61,10 +65,11 @@ h2 {  /* hidden but here for SEO */
 }
 h3 {
     padding: 10px 0 0;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
+    /*font-weight: 700;*/
     color: #fff;
     text-shadow: 1.5px 1.5px 5px #064e9a;
+    font-family: 'Sacramento', cursive;
 }
 section {
     margin: 0 auto;
