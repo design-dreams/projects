@@ -1,0 +1,23 @@
+{
+  "name": "git-projects",
+  "version": "1.0.0",
+  "description": "Web Design Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/design-dreams/projects.git"
+  },
+  "author": "Rebecca Palumbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/design-dreams/projects/issues"
+  },
+  "homepage": "https://github.com/design-dreams/projects#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.3.0"
+  }
+}

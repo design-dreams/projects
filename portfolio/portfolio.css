@@ -77,9 +77,15 @@ section {
     text-align: center;
     display: none;
 }
+section li {
+    list-style-type: none;
+}
 #projects p {
     font-size: 14px;
     line-height: 1.2;
+}
+#about #icon {
+    width: 30px;
 }
 
 /** footer **/
