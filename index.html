@@ -6,18 +6,18 @@
         <meta name="description" content="Portfolio site for a Web Designer in the PNW.">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="portfolio.css" rel="stylesheet">
+        <link href="portfolio/portfolio.css" rel="stylesheet">
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="portfolio-jquery.js" async></script>
-        <!-- Optional plain JavaScript: <script src="portfolio.js" async></script> -->
+        <script src="portfolio/portfolio-jquery.js" async></script>
+        <!-- Optional plain JavaScript: <script src="portfolio/portfolio.js" async></script> -->
     </head>
 
     <body>
         <div id="start"> <!-- used to start this block of info in the middle of the page and have it move up when links are clicked -->
             <header>
                 <h1>Rebecca Palumbo</h1>
-                <img src="animation/webdesign.svg" alt="Web Designer animated text">
+                <img src="portfolio/webdesign.svg" alt="Web Designer animated text">
             </header>
             <nav id="navbar">
                 <p id="nav-projects">projects</p>
@@ -30,8 +30,8 @@
                 <h2>Projects</h2> <!--hidden, but here for SEO-->
 
                 <h3>Portfolio</h3>
-                <p>I used jQuery in this website, but I also created a plain JavaScript version that can be seen on
-                    GitHub as well. They are used to
+                <p>This is the site you are currently viewing. I used jQuery, but I also created a plain
+                    JavaScript version that can be seen on GitHub as well. They are used to
                     navigate the menu and also animate the header and nav up. All content is on one page this way.
                     I created
                     the Web Designer animation with Illustrator, basing it on a font I liked, then saving it as an SVG
@@ -84,9 +84,19 @@
             </section>
             <section id="about">
                 <h2>About Rebecca</h2> <!--hidden, but here for SEO-->
-                <h3>Resume</h3> <!--dropbox or google docs-->
+                <h3>Resume <img id="icon" src="portfolio/download-pdf-icon.svg" /></h3> <!--download PDF, icon free from https://icons8.com/icon/pack/files/ios--black-->
                 <h3>Certificates Achieved</h3>
+                <ul>
+                    <li>User Interface Developer - Cascadia College</li>
+                    <li>Web Foundations - Cascadia College</li>
+                    <li>JavaScript Programming - Cascadia College</li>
+                    <li>Responsive Web Design - freeCodeCamp.com</li>
+                </ul>
                 <h3>Education</h3>
+                <ul>
+                    <li>Cascadia College - Certificates in Web Design</li>
+                    <li>San Jose State University - BS in Mechanical Engineering</li>
+                </ul>
 
             </section>
             <section id="connect">
