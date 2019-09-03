@@ -43,17 +43,17 @@ function showAbout() {
     navAbout.classList.add("selected");
     about.style.display = "block";
 }
-// moves header up when nav link is clicked, animation is choppy
+// moves header up when nav link is clicked
 function moveHeader() {
-    var start = document.getElementById("start");
-    var n = 20;
-    var id = setInterval(frame, 50);
+    var move = document.getElementsByTagName("header").item(0);
+    var n = 200;
+    var id = setInterval(frame, 3);
     function frame() {
         if (n == 0) {
             clearInterval(id);
         } else {
             n--;
-            start.style.top = n + "%";
+            move.style.paddingTop = n + "px";
         }
     }
     navBar.removeEventListener("click", moveHeader);

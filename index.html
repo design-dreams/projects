@@ -8,30 +8,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="portfolio/portfolio.css" rel="stylesheet">
         <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="portfolio/portfolio-jquery.js" async></script>
-        <!-- Optional plain JavaScript: <script src="portfolio/portfolio.js" async></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="portfolio/portfolio-jquery.js" async></script> -->
+        <!-- Plain JavaScript:--> 
+        <script src="portfolio/portfolio.js" async></script>
     </head>
 
     <body>
-        <div id="start"> <!-- used to start this block of info in the middle of the page and have it move up when links are clicked -->
-            <header>
-                <h1>Rebecca Palumbo</h1>
-                <img src="portfolio/webdesign.svg" alt="Web Designer animated text">
-            </header>
-            <nav id="navbar">
-                <p id="nav-projects">projects</p>
-                <p id="nav-about">about rebecca</p>
-                <p id="nav-connect">connect</p>
-            </nav>
-        </div>
+        <header>
+            <h1>Rebecca Palumbo</h1>
+            <img src="portfolio/webdesign.svg" alt="Web Designer animated text">
+        </header>
+        <nav id="navbar">
+            <p id="nav-projects">projects</p>
+            <p id="nav-about">about rebecca</p>
+            <p id="nav-connect">connect</p>
+        </nav>
         <main>
             <section id="projects">
                 <h2>Projects</h2> <!--hidden, but here for SEO-->
 
                 <h3>Portfolio</h3>
-                <p>This is the site you are currently viewing. I used jQuery, but I also created a plain
-                    JavaScript version that can be seen on GitHub as well. They are used to
+                <p>This is the site you are currently viewing. I used JavaScript, but I also created a
+                    jQuery version that can be seen on GitHub as well. They are used to
                     navigate the menu and also animate the header and nav up. All content is on one page this way.
                     I created
                     the Web Designer animation with Illustrator, basing it on a font I liked, then saving it as an SVG
@@ -50,23 +49,13 @@
                     <a href="https://github.com/design-dreams/projects/tree/master/gallery">see the code on GitHub</a></p>
                 
                 <h3>Walking in Nature</h3>
-                <p>This is the first website I created in school, but then I improved it after learning more. 
+                <p>This is the first website I created at the community college I went to, but then I improved it
+                    after learning more. 
                     I added some CSS animation for selecting the hike, created SVG boot prints that appear in
                     the header when the screen is at least 960px wide, made it responsive, etc. I wrote all of
                     the content and took all of the pictures. The dots look best in Chrome.</p>
                 <p><a href="hiking/index.html">see the website</a> | 
                     <a href="https://github.com/design-dreams/projects/tree/master/hiking">see the code on GitHub</a></p>
-                
-                <h3>Going Global</h3>
-                <p>I created this website for a User Interface class at the community college I went to. I worked on a team,
-                    but only one other person knew how to code and was pretty busy. He helped with a few pages. I designed 
-                    the overall website, the header, the footer and icons there, and edited the content on the homepage
-                    from the client we were working with. We did work
-                    with a client who worked at UW and I did work with a fellow student on interviewing him and she had some
-                    good input. We also did some user testing in this class. After the class was over, I worked to make 
-                    the site responsive and created the logo during a short internship.</p>
-                <p><a href="COIL/index.html">see the website</a> | 
-                    <a href="https://github.com/design-dreams/projects/tree/master/COIL">see the code on GitHub</a></p>
                 
                 <h3>Responsive Web Design Projects</h3>
                 <p>I created these projects to increase and cement my knowledge of responsive web design
@@ -75,27 +64,70 @@
                     on CodePen as suggested by freeCodeCamp.</p>
                 <p><a href="https://codepen.io/collection/AxdrOY/">see the projects</a> | 
                     <a href="https://www.freecodecamp.org/certification/rebeccapalumbo/responsive-web-design">see the certificate</a></p>
-                
+
+                <h3>Going Global</h3>
+                <p>I created this website for a User Interface class at the community college I went to. I worked on a team of four,
+                    but only one other person knew how to code and was pretty busy. He helped with a few pages. I designed and developed 
+                    the overall website, the header, the footer and icons there, and edited the content on the homepage
+                    from the client we were working with. I also created a mock-up for the site on Illustrator. I did work with a
+                    fellow student on interviewing the client, figuring out the purpose of the site, writing up a proposal, and
+                    deciding where to put elements on the page. We also did some user testing in this class. After the class was over, I worked to make 
+                    the site responsive and created the logo during a short internship.</p>
+                <p><a href="COIL/index.html">see the website</a> | 
+                    <a href="https://github.com/design-dreams/projects/tree/master/COIL">see the code on GitHub</a></p>
+
                 <h3>Art Space</h3>
-                <p>A project I did for school that is for children with colorful animation and an easter egg.
-                     I used Greensock and haven't updated it.</p>
+                <p>A simple project I did for school that is for children with colorful animation and an easter egg.
+                     I used Greensock, jQuery, and a CSS library.</p>
                 <p><a href="kids/index.html">see the website</a> |
-                    <a href="#">see the code on GitHub</a></p>
+                    <a href="https://github.com/design-dreams/projects/tree/master/kids">see the code on GitHub</a></p>
             </section>
             <section id="about">
                 <h2>About Rebecca</h2> <!--hidden, but here for SEO-->
+                <h3>What I'm looking for...</h3>
+                <p></p>
                 <h3>Resume <img id="icon" src="portfolio/download-pdf-icon.svg" /></h3> <!--download PDF, icon free from https://icons8.com/icon/pack/files/ios--black-->
+                <h3>Education</h3>
+                <ul>
+                    <li>Cascadia College - Certificates in Web Design</li>
+                    <li>San Jose State University - BS in Mechanical Engineering</li>
+                </ul>
                 <h3>Certificates Achieved</h3>
                 <ul>
                     <li>User Interface Developer - Cascadia College</li>
                     <li>Web Foundations - Cascadia College</li>
                     <li>JavaScript Programming - Cascadia College</li>
-                    <li>Responsive Web Design - freeCodeCamp.com</li>
+                    <li><a href="https://www.freecodecamp.org/certification/rebeccapalumbo/responsive-web-design">Responsive Web Design - freeCodeCamp.com</a></li>
                 </ul>
-                <h3>Education</h3>
+                <h3>Classes Completed</h3>
                 <ul>
-                    <li>Cascadia College - Certificates in Web Design</li>
-                    <li>San Jose State University - BS in Mechanical Engineering</li>
+                    <li class="underline">Cascadia College</li>
+                    <ul>
+                        <li>Basics of Web Authoring (HTML & CSS)</li>
+                        <li>Intro to Programming (Java)</li>
+                        <li>JavaScript (jQuery)</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Front End Development</li>
+                        <li>UI Design</li>
+                    </ul>
+                    <li class="underline">Lynda.com</li>
+                    <ul>
+                        <li>JavaScript Essential Training</li>
+                        <li>Design Aesthetics for the Web</li>
+                        <li>WordPress 5 Essential Training</li>
+                        <li>WordPress 5 Essential Training: Site Adminstration</li>
+                    </ul>
+                    <li class="underline">Treehouse</li>
+                    <ul>
+                        <li>npm Basics</li>
+                        <li>Introduction to Git</li>
+                        <li>AJAX Basics</li>
+                        <li>Web Design Process</li>
+                        <li>Using jQuery Plugins</li>
+                        <li>React Basics</li>
+                        <li>Object Oriented JavaScript</li>
+                    </ul>
                 </ul>
 
             </section>

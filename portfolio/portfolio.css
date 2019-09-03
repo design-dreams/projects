@@ -10,13 +10,9 @@ body, html {
     height: 100%;
     background-color: #eef1fd;
 }
-/** header & nav to move up with js when clicking on doc **/
-#start {
-    position: relative;
-    top: 40%;
-}
 /** header **/
 header {
+    padding-top: 200px;
     background-color: #152027;
     position: relative;
     z-index: 10;
@@ -64,9 +60,8 @@ h2 {  /* hidden but here for SEO */
     font-size: 2px;
 }
 h3 {
-    padding: 10px 0 0;
+    padding: 20px 0 0;
     font-size: 30px;
-    /*font-weight: 700;*/
     color: #fff;
     text-shadow: 1.5px 1.5px 5px #064e9a;
     font-family: 'Sacramento', cursive;
@@ -87,6 +82,14 @@ section li {
 #about #icon {
     width: 30px;
 }
+li.underline {
+    text-decoration: underline;
+    padding-top: 15px;
+}
+li.underline:first-child {
+    padding-top: 0;
+}
+
 
 /** footer **/
 

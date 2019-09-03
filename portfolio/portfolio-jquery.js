@@ -1,7 +1,7 @@
-// clicking on nav bar makes it move up
+// clicking on nav bar makes header & nav bar move up
 $("#navbar").one("click", function() {
-    $("#start").animate({
-        top: "0"
+    $("header").animate({
+        paddingTop: "0"
     }, 2000); 
 });
 
