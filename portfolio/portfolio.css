@@ -10,6 +10,15 @@ body, html {
     height: 100%;
     background-color: #eef1fd;
 }
+p a, li a {
+    color: #225bfb;
+}
+p a:visited, li a:visited {
+    color: #5e19f7;
+}
+p a:hover, li a:hover {
+    color: #000;
+}
 /** header **/
 header {
     padding-top: 200px;
@@ -43,7 +52,7 @@ nav p {
     margin: 2px 12px;
     color: #225bfb;
     text-transform: uppercase;
-    text-shadow: 0 0 2px #186ac1;
+    text-shadow: 0 0 4px #2276f5;
     font-size: 14px;
 }
 nav p.selected {
@@ -75,9 +84,9 @@ section {
 section li {
     list-style-type: none;
 }
-#projects p {
-    font-size: 14px;
-    line-height: 1.2;
+section p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 #about #icon {
     width: 30px;
@@ -88,6 +97,14 @@ li.underline {
 }
 li.underline:first-child {
     padding-top: 0;
+}
+h3 a {
+    color: #225bfb;
+    text-decoration: none;
+    
+}
+h3 a:hover {
+    color: #000;
 }
 
 
