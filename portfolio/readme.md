@@ -1,6 +1,6 @@
 # Portfolio
 
-These are all of the files for my portfolio, except index.html. That is in the root level project folder. The website is only one page.
+These are all of the files for my portfolio, except index.html. That is in the root level projects folder. The website is only one page.
 
 I created both a plain JavaScript version and jQuery version that both work.
 
