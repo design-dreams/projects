@@ -14,10 +14,11 @@ p a, li a {
     color: #225bfb;
 }
 p a:visited, li a:visited {
-    color: #5e19f7;
+    color: #616365;
 }
 p a:hover, li a:hover {
     color: #000;
+    text-decoration: none;
 }
 /** header **/
 header {
@@ -71,8 +72,8 @@ h2 {  /* hidden but here for SEO */
 h3 {
     padding: 20px 0 0;
     font-size: 30px;
-    color: #fff;
-    text-shadow: 1.5px 1.5px 5px #064e9a;
+    color: #225bfb;
+    text-shadow: 2px 2px 12px #1f69c5;
     font-family: 'Sacramento', cursive;
 }
 section {
@@ -88,27 +89,14 @@ section p {
     font-size: 16px;
     line-height: 1.6;
 }
-#about #icon {
-    width: 30px;
-}
+/** about section **/
 li.underline {
-    text-decoration: underline;
+    font-weight: bold;
     padding-top: 15px;
 }
 li.underline:first-child {
     padding-top: 0;
 }
-h3 a {
-    color: #225bfb;
-    text-decoration: none;
-    
-}
-h3 a:hover {
-    color: #000;
-}
-
-
-/** footer **/
 
 /** changes for screens above 430px **/
 @media screen and (min-width: 430px) {
