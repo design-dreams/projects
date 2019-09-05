@@ -97,6 +97,30 @@ li.underline {
 li.underline:first-child {
     padding-top: 0;
 }
+/** connect section **/
+#flex-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#flex-container p {
+    border: 1px #225bfb solid;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    margin: -5px -5px;
+}
+#flex-container a {
+    top: 30px;
+    position: relative;
+}
+.icon {
+    top: 50px;
+    position: relative;
+    font-weight: 900;
+    font-size: 2em;
+}
 
 /** changes for screens above 430px **/
 @media screen and (min-width: 430px) {
@@ -124,5 +148,8 @@ li.underline:first-child {
     section {
         width: 600px;
         padding: 10px 0;
+    }
+    #connect {
+        width: 100%;
     }
 }
