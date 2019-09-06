@@ -14,10 +14,10 @@ p a, li a {
     color: #225bfb;
 }
 p a:visited, li a:visited {
-    color: #616365;
+    color: #582290;
 }
 p a:hover, li a:hover {
-    color: #000;
+    color: #616365;
     text-decoration: none;
 }
 /** header **/
@@ -71,9 +71,9 @@ h2 {  /* hidden but here for SEO */
 }
 h3 {
     padding: 20px 0 0;
-    font-size: 30px;
+    font-size: 36px;
     color: #225bfb;
-    text-shadow: 2px 2px 12px #1f69c5;
+    text-shadow: 2px 2px 4px #7a96b9;
     font-family: 'Sacramento', cursive;
 }
 section {
@@ -120,8 +120,8 @@ li.underline:first-child {
     position: relative;    
 }
 #flex-container div:hover {
-    border: 3px #000 solid;
-    box-shadow: 0 0 8px 2px #000 inset;
+    border: 3px #616365 solid;
+    box-shadow: 0 0 8px 2px #616365 inset;
     background: #fff;
     z-index: 10;
     position: relative;
@@ -136,7 +136,7 @@ li.underline:first-child {
     text-decoration: none;
 }
 #flex-container a:hover {
-    color: #000;
+    color: #616365;
 }
 .icon {
     top: 45px;
