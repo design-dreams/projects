@@ -12,6 +12,16 @@
 			  <feMergeNode in="SourceGraphic"/>
 		  </feMerge>
     </filter>
+    <filter id="glow2"> 
+      <feMorphology operator="dilate" radius="2" in="SourceAlpha" result="thicken" />
+      <feGaussianBlur in="thicken" stdDeviation="3" result="blurred" />
+      <feFlood flood-color="#186bc1" result="glowColor" />
+      <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+      <feMerge>
+			  <feMergeNode in="softGlow_colored"/>
+			  <feMergeNode in="SourceGraphic"/>
+		  </feMerge>
+    </filter>
     <!-- css animation learned from watching Treehouse course -->
     <style>
       .cls-1 {
@@ -19,7 +29,12 @@
         stroke: #225bfb;
         stroke-miterlimit: 10;
         stroke-width: 1.5;
-        filter: url(#glow);
+        filter: url(#glow2);
+      }
+      @media screen and (min-width: 450px) {
+        .cls-1 {
+          filter: url(#glow);
+        }
       }
       @keyframes offset {
         100% {
