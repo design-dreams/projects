@@ -90,11 +90,14 @@ section p {
     line-height: 1.6;
 }
 /** about section **/
-li.underline {
+#classes>li {
     font-weight: bold;
     padding-top: 15px;
 }
-li.underline:first-child {
+#classes ul li {
+    font-weight: normal;
+}
+#classes>li:first-child {
     padding-top: 0;
 }
 /** connect section **/
