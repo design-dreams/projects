@@ -118,7 +118,7 @@ section p {
     height: 150px;
     width: 150px;
     margin: -5px -5px;
-    background-image: radial-gradient(#fff 40%, transparent, transparent);
+    background-image: radial-gradient(#fff 40%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     z-index: 1;
     position: relative;    
 }
