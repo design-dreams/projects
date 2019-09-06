@@ -98,27 +98,49 @@ li.underline:first-child {
     padding-top: 0;
 }
 /** connect section **/
+#connect {
+    width: 160px;
+}
 #flex-container {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    
+}
+#flex-container div {
+    border: 3px #225bfb solid;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px #2276f5 inset;
+    height: 150px;
+    width: 150px;
+    margin: -5px -5px;
+    background-image: radial-gradient(#fff 40%, transparent, transparent);
+    z-index: 1;
+    position: relative;    
+}
+#flex-container div:hover {
+    border: 3px #000 solid;
+    box-shadow: 0 0 8px 2px #000 inset;
+    background: #fff;
+    z-index: 10;
+    position: relative;
 }
 #flex-container p {
-    border: 1px #225bfb solid;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    top: 45px;
     font-size: 20px;
-    margin: -5px -5px;
+    position: relative;
 }
 #flex-container a {
-    top: 30px;
-    position: relative;
+    color: #225bfb;
+    text-decoration: none;
+}
+#flex-container a:hover {
+    color: #000;
 }
 .icon {
-    top: 50px;
+    top: 45px;
     position: relative;
-    font-weight: 900;
     font-size: 2em;
 }
 
@@ -135,6 +157,12 @@ li.underline:first-child {
         margin: -15px auto 0;
     }
 }
+@media screen and (min-width: 500px) {
+    #connect {
+        width: 500px;
+        padding-top: 50px;
+    }
+}
 /** changes for screens above 600px **/
 @media screen and (min-width: 600px) {
     h1 {
@@ -145,11 +173,14 @@ li.underline:first-child {
         max-width: 450px;
         margin: -25px auto 0;
     }
-    section {
+    #about, #projects {
         width: 600px;
         padding: 10px 0;
     }
+}
+@media screen and (min-width: 770px) {
     #connect {
         width: 100%;
+        padding-top: 100px;
     }
 }
