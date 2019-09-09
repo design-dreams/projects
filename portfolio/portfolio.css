@@ -103,6 +103,7 @@ section p {
 /** connect section **/
 #connect {
     width: 160px;
+    padding: 0;
 }
 #flex-container {
     display: flex;
