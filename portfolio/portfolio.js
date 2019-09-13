@@ -47,7 +47,7 @@ function showAbout() {
 function moveHeader() {
     var move = document.getElementsByTagName("header").item(0);
     var n = 200;
-    var id = setInterval(frame, 3);
+    var id = setInterval(frame, 1);
     function frame() {
         if (n == 0) {
             clearInterval(id);
